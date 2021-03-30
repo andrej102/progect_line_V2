@@ -50,6 +50,8 @@ extern "C" {
 
 /* USER CODE END EM */
 
+void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
+
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
 
@@ -86,16 +88,15 @@ void Error_Handler(void);
 #define RMII_RXD1_GPIO_Port GPIOC
 #define LED_GREEN_Pin GPIO_PIN_0
 #define LED_GREEN_GPIO_Port GPIOB
-#define COMP1_INM_Pin GPIO_PIN_1
-#define COMP1_INM_GPIO_Port GPIOB
 #define COMP1_INP_LINE1_VIDEO_Pin GPIO_PIN_2
 #define COMP1_INP_LINE1_VIDEO_GPIO_Port GPIOB
 #define RS_LCD_Pin GPIO_PIN_7
 #define RS_LCD_GPIO_Port GPIOE
-#define LINE1_ST_Pin GPIO_PIN_8
-#define LINE1_ST_GPIO_Port GPIOE
-#define LINE2_ST_Pin GPIO_PIN_9
-#define LINE2_ST_GPIO_Port GPIOE
+#define LINE_ST_Pin GPIO_PIN_8
+#define LINE_ST_GPIO_Port GPIOE
+#define GPIO_EXTI9_SWITCH_Pin GPIO_PIN_9
+#define GPIO_EXTI9_SWITCH_GPIO_Port GPIOE
+#define GPIO_EXTI9_SWITCH_EXTI_IRQn EXTI9_5_IRQn
 #define COMP2_INP_LINE2_VIDEO_Pin GPIO_PIN_11
 #define COMP2_INP_LINE2_VIDEO_GPIO_Port GPIOE
 #define LINE1_EOS_Pin GPIO_PIN_14
@@ -114,6 +115,7 @@ void Error_Handler(void);
 #define USB_FS_PWR_EN_GPIO_Port GPIOD
 #define USB_FS_OVCR_Pin GPIO_PIN_7
 #define USB_FS_OVCR_GPIO_Port GPIOG
+#define USB_FS_OVCR_EXTI_IRQn EXTI9_5_IRQn
 #define USB_FS_VBUS_Pin GPIO_PIN_9
 #define USB_FS_VBUS_GPIO_Port GPIOA
 #define USB_FS_ID_Pin GPIO_PIN_10
