@@ -48,4 +48,4 @@ stm32h7xx_hal_eth.c:2528:13:ETH_MACDMAConfig	152	static
 stm32h7xx_hal_eth.c:2601:13:ETH_MAC_MDIO_ClkConfig	24	static
 stm32h7xx_hal_eth.c:2652:13:ETH_DMATxDescListInit	24	static
 stm32h7xx_hal_eth.c:2689:13:ETH_DMARxDescListInit	24	static
-stm32h7xx_hal_eth.c:2734:17:ETH_Prepare_Tx_Descriptors	56	static
+stm32h7xx_hal_eth.c:2734:17:ETH_Prepare_Tx_Descriptors	56	static,ignoring_inline_asm
